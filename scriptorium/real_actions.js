@@ -95,11 +95,13 @@ function cloneElem(parentId, sourceClass, wrapElem, addDelButton){
 			delButtonParent.removeChild(elemToBeReplaced);
 			delButtonParent.appendChild(delButton);
 
-			var elems = delButtonParent.getElementsByTagName('*');
-			for(var i = 0; i < elems.length; ++i) {
-				console.log(elems.length);
-				if(elems[i].nodeType === 3) {
-					delButtonParent.removeChild(elems[i]);
+			while(currentElem !== delButtonParent.lastChild) {
+				var currentElem = delButtonParent.firstChild;
+				if(currentElem.nodeType === 3) {
+					delButtonParent.removeChild(currentElem);
+
+				}else {
+					currentElem = currentElem.nextSibling;
 				}
 			}
 	}
