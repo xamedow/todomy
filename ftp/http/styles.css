@@ -1,0 +1,46 @@
+*,html,body{
+	margin:0;padding:0;
+}
+body{
+	color: #000;
+	font:1em Verdana,sans-serif normal;
+	height: 100%;
+	background: #595e61 url(images/head_bg.png);
+}
+#header{
+	width:100%;height:147px;
+	margin: 0 auto;
+	background: url(images/header_bg.jpg) repeat-x;
+	border-bottom: 3px solid #2f0000; 
+}
+#header a{
+	color: #FFF;
+	font: 1.3em/116px Verdana,sans-serif bold;
+	position: absolute;
+	top: 40px; left:65px;
+	background: url(images/logo_plane.png) no-repeat 0 100%;
+	width: 237px; height: 48px;
+	display: block;
+	text-align: center; text-decoration: none;
+}
+#header a:hover{
+	background: url(images/logo_plane.png) no-repeat 0 0;
+}
+#not_footer{
+	width: 100%; height:100%;
+	margin: 0 auto; padding-bottom: 150px;
+}
+#main_content{
+	background: url(images/dorozhnyye_raboty.png) no-repeat 50% 50%;
+	width:980px; height: 110px;
+	margin: 0 auto; padding-top:390px;
+	color: #ffba25;
+	text-align:center;
+}
+#main_content h1{
+	font: 2em Verdana,sans-serif bold;
+}
+#footer{
+	height: 150px;
+	margin-top: -150px;
+}

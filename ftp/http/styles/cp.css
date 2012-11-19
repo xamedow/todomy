@@ -1,0 +1,63 @@
+#header{
+	width: 100%; height: 150px;
+	padding: 1px;
+	background: url(/images/cp/header_bg.jpg) repeat-x;
+}
+#logo,#logo_div{
+	display: block;
+	width: 419px; height: 44px;
+	margin: 50px 0 0 35px;
+	background: url(/images/cp/admin_logo.png) no-repeat 0 100%;
+	color: #FFF;
+	text-align: center; text-decoration: none;
+	font: 1em/110px Verdana,sans-serif bold;
+}
+#logo:hover{
+	background: url(/images/cp/admin_logo.png) no-repeat 0 0;
+	text-decoration: underline;
+}
+#view{
+	display: block;
+	width: 210px; height: 51px;
+	float: right;
+	margin: 0 30px 0 0;
+	background: url(/images/cp/view.png) no-repeat;
+	text-align: center; text-decoration: none;
+	font: 1.5em/40px Tahoma,Verdana,sans-serif bold; color: #000;
+}
+#view:hover{
+	text-decoration: underline;
+	background-position: 0 100%;
+	color: #EEE;
+}
+#sidebar{
+	width: 260px;
+	padding: 0 0 20px 50px;
+	border-right: 2px solid ;
+}
+#sidebar ul li{
+	margin: 8px 0 0 0;
+	list-style-image: url(/images/cp/hover_bullet.png);
+}
+#sidebar ul li:hover{
+	list-style-image: url(/images/cp/inactive_bullet.png);
+}
+#sidebar ul li a{
+	display: block;
+	width: 200px; height: 20px;
+	font: 1.2em Tahoma,Verdana bold; color: #323232;
+	text-decoration: none;
+}
+#sidebar ul li a:hover{
+	text-decoration: underline;
+}
+#sidebar ul li ul li{
+	margin: 10px 0 0 25px;
+	/*list-style-image: url(/images/cp/inactive_inner_bullet.png);*/
+}
+#sidebar ul li ul li:hover{
+	/*list-style-image: url(/images/cp/active_inner_bullet.png);*/
+}
+#sidebar ul li ul li a{
+	font: 1em Tahoma,Verdana bold; color: #323232;
+}

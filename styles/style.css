@@ -1,0 +1,88 @@
+#main_frame{
+	width: 1000px; min-height: 190px;
+	margin: auto; padding: 0 0 20px 0;
+	position: relative; /*для позиционирования других блоков относительно main_frame*/
+    background: #E1E1E1;
+    border-bottom: 2px solid #FF7F2A;
+}
+#main_frame h1, #main_frame h2{
+	width: 300px; height: 36px;
+	margin: 0 0 0 10px; padding: 4px 0;
+	font: 1.3em/34px Geneva, Arial, Helvetica, sans-serif normal;
+	color: #2D2D2D;
+}
+#main_frame h2 {
+    font-size: 1.1em;
+}
+#main_frame h2 span{
+	text-decoration: underline;
+	color: #FF7F2A;
+}
+#main_frame form, #main_frame h2{
+    margin: 0 0 0 30px;
+}
+/*### форма ###*/
+
+    #text_list li{
+        margin: 0 0 0 20px;
+    }
+    #text_list input{
+        margin: 5px 0 0 10px;
+    }
+    /*класс текстового поля*/
+    .field {
+        width: 350px; height: 21px;
+    }
+    /*класс кнопки добавления текстового поля*/
+    .add_field {
+        width: 25px; height: 25px;
+    }
+    /*класс кнопки следующий шаг*/
+    .next_step {
+        margin: 0 0 0 267px;
+        width: 150px; height: 30px;
+    }
+
+/*#######################################*/
+
+/*### содержание ###*/
+
+    #contents {
+        float: right;
+        width: 250px;
+        margin: 15px 200px 0 0; padding: 0 0 0 16px;
+        border-left: 1px solid #B4B4B4;
+    }
+    #contents ul {
+        list-style: disc inside;
+    }
+    #contents li {
+        margin: 0 0 5px 0;
+    }
+    #contents a{
+        font: 0.95em Geneva, Arial, Helvetica, sans-serif normal;
+        color: #000;
+        text-decoration: none;
+    }
+    #contents a:hover{
+        color: #FF7F2A;
+        text-decoration: underline;
+    }
+    #contents a.finish {
+        font-weight: bold;
+    }
+    body#main_body .main,
+    body#tasks_body .tasks,
+    body#func_body .func,
+    body#u_func_body .u_func,
+    body#players_body .players,
+    body#mockups_body .mockups {
+        color: #FF7F2A;
+        text-decoration: none;
+        margin-left: -5px;;
+    }
+    body#finish_body .finish {
+        color: #0F8F0F;
+        text-decoration: none;
+    }
+/*#######################################*/

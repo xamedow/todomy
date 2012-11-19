@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="styles/reset.css" type="text/css" rel="stylesheet">
+<link href="styles/main.css" type="text/css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
+<title>Главная saravto.info</title>
+</head>
+<body>
+	<div id="not_footer">
+		<div id="header">
+			<a href="/" title="На главную">инфо-Саратов</a>
+			<form action="" method="GET" name="search_queue">
+				<label for="search_field">поиск по сайту</label><br>
+				<input type="text" value="название организации, адрес или вид деятельности" id="search_field" onclick="searchClear()" onblur="searchFill()">
+				<input type="submit" value="Поиск" class="submit">
+			</form>
+			<ul id="main_menu">
+				<li><a class="main_entry" href="" title="ремонт, диагностика">ремонт</a>
+					<ul class="secondary_entry">
+						<li><a href="" title="Станции Технического Обслуживания">СТО</a></li>
+						<li><a href="" title="Магазины запасных частей, разборки">Автозапчасти</a></li>
+						<li><a href="" title="Магазины шин, колесных дисков и аксессуаров к ним">Шины, диски</a></li>
+						<li><a href="" title="Шиномонтаж, балансировка, ремонт шин, дисков">Шиномонтаж</a></li>
+					</ul>
+				</li>
+				
+				<li><a class="main_entry" href="" title="обслуживание">обслуживание</a>
+					<ul class="secondary_entry" id="obsluga_entry">
+						<li><a href="" title="Магазины автохимии">Автохимия</a></li>
+						<li><a href="" title="Мойки, химчистки">Мойки</a></li>
+						<li><a href="" title="Автозвук, тонировка, шумоизоляция">Автозвук</a></li>
+						<li><a href="" title="Замена масла">Замена масла</a></li>
+						<li><a href="" title="Автозаправочные станции">АЗС</a></li>
+						<li><a href="" title="Автостоянки">Автостоянки</a></li>
+					</ul>
+				</li>
+				<li><a class="main_entry" href="" title="покупка">покупка</a>
+					<ul class="secondary_entry" id="pokupka_entry">
+						<li><a href="" title="Авторынки">Авторынки</a></li>
+						<li><a href="" title="Автосалоны, официальные дилеры">Автосалоны</a></li>
+					</ul>
+				</li>
+				<li><a class="main_entry" href="" title="оформление автомобиля">оформление</a>
+					<ul class="secondary_entry" id="oforml_entry">
+						<li><a href="" title="Пункты инструментального контроля">Техосмотр</a></li>
+						<li><a href="" title="Автострахование, ОСАГО, КАСКО">Cтрахование</a></li>
+						<li><a href="" title="Автошколы, автодромы">Автошколы</a></li>
+						<li><a href="" title="МРЭО ГИБДД">МРЭО</a></li>
+					</ul>
+				</li>
+
+			</ul>
+			<div id="entrance">
+				<a href="/" title="Войти или зарегистрироваться">войти</a>
+				<noscript>
+					<div id="treasury">
+						1
+					</div>
+				</noscript>
+			</div>	
+		</div><!--header-->
+		<div id="main_content">
+			<div id="road_block">
+				<h2>Осторожно, ведутся работы!</h2>
+			</div>
+			<p class="breadcrumbs">
+				<span>текущая страница: </span>Главная
+			</p>
+			<h1>автомобильная инфраструктура Саратова</h1>
+			<div class="boards">
+				<span>недавно добавленные:</span>
+			</div>
+			<div class="boards">
+				<span>популярные:</span>
+			</div>
+		</div><!--main_content-->
+	</div><!--not_footer-->
+	<div id="footer">
+	saravto.info &copy; 2012
+	</div>
+<script src="srcs/main.js"></script>
+</body>
+</html>

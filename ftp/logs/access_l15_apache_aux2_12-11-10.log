@@ -1,0 +1,5 @@
+78.158.11.226 - - [10/Nov/2012:03:06:28 +0400] "GET / HTTP/1.0" 200 4322 "http://evuln.com/tools/malware-scanner/saravto.info/" "Lynx/2.8.5rel.1 libwww-FM/2.15FC SSL-MM/1.4.1c OpenSSL/0.9.7e-dev"
+78.158.11.226 - - [10/Nov/2012:03:06:28 +0400] "GET / HTTP/1.0" 200 4322 "http://www.google.com/url?sa=t&rct=j&q=saravto.info&source=web&cd=5&ved=0CF0QFjAE&url=http:%2F%2Fsaravto.info%2F&cad=rja" "Lynx/2.8.5rel.1 libwww-FM/2.15FC SSL-MM/1.4.1c OpenSSL/0.9.7e-dev"
+95.108.158.133 - - [10/Nov/2012:07:59:39 +0400] "GET / HTTP/1.1" 200 4322 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
+95.108.158.133 - - [10/Nov/2012:18:02:00 +0400] "GET /robots.txt HTTP/1.1" 200 50 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
+95.108.158.133 - - [10/Nov/2012:21:02:26 +0400] "GET / HTTP/1.1" 200 4322 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"

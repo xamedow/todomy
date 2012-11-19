@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export PHP_FCGI_MAX_REQUESTS=500
+exec /usr/local/bin/php -d sendmail_path='/usr/bin/sendmail -t -i -f saravto-info_e3202128@1gb.ru' -c /home/virtwww/w_saravto-info_e3202128/.php:/etc/php
