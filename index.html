@@ -16,26 +16,33 @@
                 <li class="main"><a href="index.html" title="имя, хостинг, тип (магазин, визитка и тд)" class="main">основная информация</a></li>
                 <li class="tasks"><a href="tasks.html" title="работать с покупателем через банковские карты и web money" class="tasks">задачи решаемые сайтом</a></li>
                 <li class="func"><a href="func.html" title="контекстная справка в виде подсказок, панель администратора" class="func.html">общий функционал</a></li>
-                <li class="u_func"><a href="u_func.html" title="вывод статистистики, регистрация пользователей" class="u_func">утилитарный функционал</a></li>
-                <li class="players"><a href="players.html" title="администратор, пользователь, модератор, гость" class="players">роли</a></li>
+                <li class="players"><a href="players.html" title="администратор, пользователь, модератор, гость" class="players">пользователи</a></li>
                 <li class="mockups"><a href="mockups.html" title="если есть" class="mockups">макеты сайта</a></li>
                 <li class="finish"><a href="finish.html" title="поздравляем, Вы заполнили форму!" class="finish">готово!</a></li>
             </ul>
         </div>
         <!-- /Содержание -->
         <div id="help">
-            основная информация о будущем сайте: название, тип сайта (магазин, визитка...)
+            основная информация о будущем сайте: <p>название, предпочитаемый хостинг, тип сайта (магазин, визитка...)</p>
         </div>
         <h1>основная информация</h1>
         <h2>вы хотите, чтобы <span>Ваш</span> сайт:</h2>
 <!-- Форма -->
-        <form action="tasks.html" method="post">
+        <form action="tasks.html" method="post" class="unordered">
             <ul id="text_list">
                 <li>
                     <label for="site_name_field">назывался: </label><input type="text" class="field" value="" name="site_name" id="site_name_field" title="название сайта">
                 </li>
                 <li>
                     <label for="hosting_field">находился: </label><input type="text" class="field" value="" name="hosting" id="hosting_field" title="предпочитаемый хостинг">
+                </li><li>
+                    <label for="type_field">выглядел: </label>
+                    <select class="field" name="type" id="type_field" title="тип сайта">
+                        <option value="" selected></option>
+                        <option value="cutaway">сайт-визитка</option>
+                        <option value="eshop">электронный магазин</option>
+                        <option value="service">онлайн-сервис</option>
+                    </select>
                 </li>
             </ul>
             <br>

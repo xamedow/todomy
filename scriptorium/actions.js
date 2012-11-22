@@ -40,8 +40,6 @@ function cloneElem(parentId, sourceClass, wrapElem, addDelButton){
 	newAddButton.className = addButton.className;
 	newAddButton.value = addButton.value;
 	newAddButton.title = addButton.title;
-	//идет смещение влево
-	newAddButton.style.marginLeft = '14px';//css почему возникает смещение?
 	//добавляем событие на новую кнопку
 	newAddButton.addEventListener('click', function() { cloneElem(parentId, sourceClass, wrapElem, addDelButton) }, false);
 
@@ -90,8 +88,6 @@ function cloneElem(parentId, sourceClass, wrapElem, addDelButton){
 			delButton.className = elemToBeReplaced.className;
 			delButton.value = buttonValue;
 			delButton.title = 'удалить поле';
-			//идет смещение влево todo пофиксить НЕсмещение после удаления и добавления первого элемента
-			if(formFieldCounter > 1) {delButton.style.marginLeft = '14px';}//css почему возникает смещение?
 			delButton.addEventListener('click', function() {if(hasWrapper) { deleteElem(delButtonParent); }else { deleteElem(delButtonTarget, 0.5); deleteElem(delButton, 0.5); } }, false);
 
 			//удаляем заменяемый элемент и вставляем кнопку

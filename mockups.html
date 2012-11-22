@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<!--Форма "функционал будущего сайта" версия 0.0.01 10-11-12-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--Форма "функционал будущего сайта" версия 0.0.02 10-11-12-->
 <html>
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
-	<title>функционал будущего сайта</title>
+	<title>загрузка макетов</title>
 </head>
 <body id="mockups_body">
 <!--основной фрейм -->
@@ -16,29 +16,31 @@
                 <li class="main"><a href="index.html" title="имя, хостинг, тип (магазин, визитка и тд)" class="main">основная информация</a></li>
                 <li class="tasks"><a href="tasks.html" title="работать с покупателем через банковские карты и web money" class="tasks">задачи решаемые сайтом</a></li>
                 <li class="func"><a href="func.html" title="контекстная справка в виде подсказок, панель администратора" class="func.html">общий функционал</a></li>
-                <li class="u_func"><a href="u_func.html" title="вывод статистистики, регистрация пользователей" class="u_func">утилитарный функционал</a></li>
-                <li class="players"><a href="players.html" title="администратор, пользователь, модератор, гость" class="players">роли</a></li>
+                <li class="players"><a href="players.html" title="администратор, пользователь, модератор, гость" class="players">пользователи</a></li>
                 <li class="mockups"><a href="mockups.html" title="если есть" class="mockups">макеты сайта</a></li>
                 <li class="finish"><a href="finish.html" title="поздравляем, Вы заполнили форму!" class="finish">готово!</a></li>
             </ul>
         </div>
         <!-- /Содержание -->
-        <h1>функционал будущего сайта</h1>
-        <h2>сайт <span>должен</span> уметь:</h2>
+        <div id="help">
+            Вы можете добавить существующие макеты, эскизы, наброски. Допустимые форматы: <p>*.docx, *.doc, *.psd, *.tiff, *.jpg, *.png</p>
+        </div>
+        <h1>загрузка макетов</h1>
+        <h2>Ваши идеи по поводу <span>оформления</span>...</h2>
 <!-- Форма -->
-        <form action="index.html?step=players" method="post">
+        <form action="finish.html" method="post" class="unordered">
             <ol id="text_list">
                 <li>
-                    <input type="text" class="field" value="" name="text0"><input type="button" class="add_field" title="добавить поле" value="+" onclick="cloneElem('text_list', 'field', 'li', true)">
+                    <input type="file" class="field" name="text0" accept="image/jpeg,image/png,image/tiff,application/octet-stream,application/msword" size="49"><input type="button" class="add_field" title="добавить поле" value="+" onclick="cloneElem('text_list', 'field', 'li', true)">
                 </li>
             </ol>
             <br>
-            <input type="submit" value="следующий шаг →" class="next_step" title="перейти к ролям">
+            <input type="submit" value="следующий шаг →" class="next_step" title="завершить">
         </form>
 <!-- /Форма -->
 	</div>
 <script type="text/javascript" src="scriptorium/my_lib.js"></script>
 <script type="text/javascript" src="scriptorium/actions.js"></script>
-<script type="text/javascript" src="scriptorium/real_actions.js"></script>
+<script type="text/javascript" src="scriptorium/learnin.js"></script>
 </body>
 </html>

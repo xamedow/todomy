@@ -2,20 +2,21 @@
 	width: 1000px; min-height: 190px;
 	margin: auto; padding: 0 0 20px 0;
 	position: relative; /*для позиционирования других блоков относительно main_frame*/
-    background: #E1E1E1;
-    border-bottom: 2px solid #FF7F2A;
+    background: #454545;
+    border-bottom: 2px solid #1E1E1E;
+	color: #72B6F0;
 }
 #main_frame h1, #main_frame h2{
-	width: 300px; height: 36px;
+	width: 320px; height: 36px;
 	margin: 0 0 0 139px; padding: 4px 0;
 	font: 1.3em/34px Geneva, Arial, Helvetica, sans-serif normal;
-	color: #2D2D2D;
+	color: #8EE16E;
 }
 #main_frame h2 {
     font-size: 1.1em;
 }
 #main_frame h2 span{
-	color: #FF7F2A;
+	color: #F0EBA0;
 }
 #main_frame form, #main_frame h2{
     margin: 0 0 0 30px;
@@ -23,27 +24,38 @@
 /*### форма ###*/
 
     #text_list li{
-        margin: 5px 0 0 10px;
-    }
-    #text_list input{
-        margin: 5px 0 0 10px;
+        margin: 5px 0 0 0;
     }
     #text_list label{
         font: 0.98em Geneva, Arial, Helvetica, sans-serif normal;
+		display: block; float: left;
+		width: 94px;
     }
+	.ordered #text_list li{
+		margin: 0 0 0 30px;
+	}
+	.ordered #text_list input{
+		margin: 5px 0 0 5px;
+	}
     /*класс текстового поля*/
     .field {
         width: 350px; height: 21px;
     }
+	.ordered .field{
+		width: 380px;
+	}
     /*класс кнопки добавления текстового поля*/
     .add_field {
         width: 25px; height: 25px;
     }
     /*класс кнопки следующий шаг*/
     .next_step {
-        margin: 0 0 0 308px;
+        margin: 0 0 0 297px;
         width: 150px; height: 30px;
     }
+	.ordered .next_step{
+		margin: 0 0 0 297px;
+	}
 /*#######################################*/
 
 /*### содержание ###*/
@@ -54,6 +66,10 @@
         margin: 15px 10px 0 0; padding: 0 0 0 15px;
         border-left: 1px solid #B4B4B4;
     }
+	#help p{
+		margin-top: 5px;
+		color: #F0EBA0;
+	}
     #contents ul {
         list-style: disc inside;
     }
@@ -62,11 +78,11 @@
     }
     #contents a{
         font: 0.95em Geneva, Arial, Helvetica, sans-serif normal;
-        color: #000;
+        color: #72B6F0;
         text-decoration: none;
     }
     #contents a:hover{
-        color: #FF7F2A;
+        color: #F0EBA0;
         text-decoration: underline;
     }
     #contents a.finish {
@@ -78,12 +94,12 @@
     body#u_func_body .u_func,
     body#players_body .players,
     body#mockups_body .mockups {
-        color: #FF7F2A;
+        color: #F0EBA0;
         text-decoration: none;
         margin-left: -5px;;
     }
     body#finish_body .finish {
-        color: #0F8F0F;
+        color: #8EE16E;
         text-decoration: none;
     }
 /*#######################################*/

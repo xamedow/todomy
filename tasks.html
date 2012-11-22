@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
-	<title>функционал будущего сайта</title>
+	<title>задачи решаемые сайтом</title>
 </head>
 <body id="tasks_body">
 <!--основной фрейм -->
@@ -16,17 +16,19 @@
                 <li class="main"><a href="index.html" title="имя, хостинг, тип (магазин, визитка и тд)" class="main">основная информация</a></li>
                 <li class="tasks"><a href="tasks.html" title="работать с покупателем через банковские карты и web money" class="tasks">задачи решаемые сайтом</a></li>
                 <li class="func"><a href="func.html" title="контекстная справка в виде подсказок, панель администратора" class="func.html">общий функционал</a></li>
-                <li class="u_func"><a href="u_func.html" title="вывод статистистики, регистрация пользователей" class="u_func">утилитарный функционал</a></li>
-                <li class="players"><a href="players.html" title="администратор, пользователь, модератор, гость" class="players">роли</a></li>
+                <li class="players"><a href="players.html" title="администратор, пользователь, модератор, гость" class="players">пользователи</a></li>
                 <li class="mockups"><a href="mockups.html" title="если есть" class="mockups">макеты сайта</a></li>
                 <li class="finish"><a href="finish.html" title="поздравляем, Вы заполнили форму!" class="finish">готово!</a></li>
             </ul>
         </div>
         <!-- /Содержание -->
-        <h1>функционал будущего сайта</h1>
+        <div id="help">
+            цель создания сайта: <p>продвижение и реклама продукции, продажи, общение с клиентами и т.д.</p>
+        </div>
+        <h1>задачи решаемые сайтом</h1>
         <h2>сайт <span>должен</span> уметь:</h2>
 <!-- Форма -->
-        <form action="index.html?step=players" method="post">
+        <form action="index.html?step=players" method="post" class="ordered">
             <ol id="text_list">
                 <li>
                     <input type="text" class="field" value="" name="text0"><input type="button" class="add_field" title="добавить поле" value="+" onclick="cloneElem('text_list', 'field', 'li', true)">
