@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<!--Форма "функционал будущего сайта" версия 0.0.01 10-11-12-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--Форма "функционал будущего сайта" версия 0.0.02 10-11-12-->
 <html>
 <head>
 	<meta charset="utf-8">
@@ -24,17 +24,20 @@
         </div>
         <!-- /Содержание -->
         <div id="help">
-            Общая информация побудущему сайту: название, тип сайта (магазин, визитка и тд)
+            основная информация о будущем сайте: название, тип сайта (магазин, визитка...)
         </div>
         <h1>основная информация</h1>
-        <h2>сайт <span>должен</span> уметь:</h2>
+        <h2>вы хотите, чтобы <span>Ваш</span> сайт:</h2>
 <!-- Форма -->
         <form action="tasks.html" method="post">
-            <ol id="text_list">
+            <ul id="text_list">
                 <li>
-                    <input type="text" class="field" value="" name="text0"><input type="button" class="add_field" title="добавить поле" value="+" onclick="cloneElem('text_list', 'field', 'li', true)">
+                    <label for="site_name_field">назывался: </label><input type="text" class="field" value="" name="site_name" id="site_name_field" title="название сайта">
                 </li>
-            </ol>
+                <li>
+                    <label for="hosting_field">находился: </label><input type="text" class="field" value="" name="hosting" id="hosting_field" title="предпочитаемый хостинг">
+                </li>
+            </ul>
             <br>
             <input type="submit" value="следующий шаг →" class="next_step" title="перейти к ролям">
         </form>
